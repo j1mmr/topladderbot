@@ -35,7 +35,7 @@ while (True):
     loc = 57000007
     print("starting...")
     trophies = 0
-    while loc <= 57000260:
+    while loc <= 57000010: #57000260:
 
         request = urllib.request.Request(
         base_url+str(loc)+endpoint,
@@ -57,9 +57,10 @@ while (True):
         #print(str(newTrophies) + " - " + str(loc))
         if newTrophies > trophies:
             tag = data['items'][0]['tag']
+            tagClean = tag[1:]
             name = data['items'][0]['name']
             trophies = newTrophies
-            statement = "Leader is " + name + " (" + tag + ") with " + str(trophies) + " trophies."
+            statement = "Leader is " + name + " with " + str(trophies) + " trophies. https://royaleapi.com/player/" + tagClean
             pass
         loc +=1
         time.sleep(2)
