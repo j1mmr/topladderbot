@@ -3,7 +3,7 @@
 
 ## Project Introduction
 
-This project provides the backend for the [@LadderRoyale](https://twitter.com/LadderRoyale) on Twitter. The backend is currently being run in an EC2 t2.Micro instance from AWS. Any feature additions will need to fit within this constrant, at least for the time being.
+This project provides the backend for the [@LadderRoyale](https://twitter.com/LadderRoyale), a Twitter bot that tracks Clash Royale's Leaderboard. The backend is currently being run in an EC2 t2.Micro instance from AWS. Any feature additions will need to fit within this constrant, at least for the time being.
 
 ## Next Steps
 - Currently, the API functions given by Supercell for Clash Royale only allow for information to be pulled from local leaderboards (country level). This bot gets around this by looping through all possible countries, but this is less than ideal.
