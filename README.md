@@ -25,15 +25,20 @@ This project runs on Python with a few additional libraries. These can be instal
   pip3 install urllib3
 ```
 
-#### Set up local Variables
+#### Set up local variables
 Create a file name `.env` and include API keys from both [Clash Royale](https://developer.clashroyale.com/#/) and [Twitter](https://developer.twitter.com/en). The structure for these variables is given inside `main.py`.
 
-#### Run
-Simply run the program with:
+#### Running the script
+First open the crontab configuration file using:
 ```bash
-  python3 main.Python
+  crontab -e
 ```
-Leave the terminal window open to keep the bot running.
+Add
+```bash
+	*/15 * * * *       cd /home/ec2-user/Ladder-Api/topladderbot && /usr/bin/python3 /home/ec2-user/Ladder-Api/topladderbot/main.py
+```
+to the configuration file. (The default text editor is VIM)
+File directories depend on your setup. The delay between running the scripts is set to 15 minutes, which is just slightly more then it takes to run the script.
 
 ## Help or questions
 
