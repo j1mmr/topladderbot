@@ -38,7 +38,7 @@ statement = ''
 loc = 57000007
 print("starting...")
 trophies = 0
-while loc <= 57000010: #57000260:
+while loc <= 57000260:
 
 	request = urllib.request.Request(
         base_url+str(loc)+endpoint,
