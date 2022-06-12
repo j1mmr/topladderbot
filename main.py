@@ -82,7 +82,7 @@ if tag!=currentTag:
 	pass
        
 	#tweet
-	#api.update_status(status = statement)
+	api.update_status(status = statement)
         
         
 	
