@@ -34,10 +34,12 @@ Simply run the program with:
   python3 main.Python
 ```
 Leave the terminal window open to keep the bot running.
+
 ## Help or questions
 
 Feel free to email me with ideas or questions:
 <woolsey@student.ubc.ca>
+
 ## License
 
 [GPL V3](https://choosealicense.com/licenses/gpl-3.0/)
